@@ -1,28 +1,147 @@
-  <!DOCTYPE html>
-  <html lang="en">
-  <head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thatthep websidte</title>
-  </head>
-  <body>
-    <a href="index.html">Home</a> |
-    <a href="about.html">About</a> |
-    <a href="contact.html">Contact</a> |
-    <h1>home page</h1>
-    <h2>home page</h2>
-    <h3>home page</h3>
-    <h4>home page</h4>
-    <h5>home page</h5>
-    <h6>home page</h6>
+    <title>Web form</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f8f9fa;
+        }
+
+        table {
+            background-color: antiquewhite;
+            width: 450px;
+            height: 420px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 10px;
+        }
+
+        input[type="text"] {
+            width:65%;
+
+        }
+
+        .submit {
+            text-align: center;
+        }
+
+        hr {
+            width: 100%;
+            margin: 0;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 0;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 style= text-align:center;>แบบสอบถาม</h1>
     <hr>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, ad.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At aut vel, voluptatem ullam unde accusantium quaerat non ad quia praesentium quae. Assumenda aut est deserunt ratione quos veritatis sit odit!
-    Reprehenderit a debitis reiciendis dolores error illo magni ad itaque dicta neque. Fugiat quis veniam inventore exercitationem culpa quod distinctio, sint, saepe minima repudiandae quisquam accusantium laboriosam facilis explicabo labore.
-    Tempore quae temporibus et ullam veritatis! Ullam quas nihil veniam accusantium error deserunt neque rerum beatae, dolorem aperiam. Tempora perferendis voluptatem perspiciatis. Quia, odit nemo consequatur sit perferendis labore explicabo.
-    Assumenda numquam quia cumque ad quaerat magni veritatis harum illo, in tempore facere suscipit laudantium vero consectetur quasi accusantium? Tempora earum eligendi obcaecati nesciunt labore mollitia odit reprehenderit quae quod.
-    Dicta neque quod ex dolor quo quam, sapiente corporis velit architecto cumque vel fugit voluptas. Sapiente, assumenda modi. Illo optio necessitatibus aliquam corrupti, omnis voluptate. Quo esse officia maiores ut.</p>
+    <table>
+    <tr>
+       <td><p><b>ข้อมูลผู้ตอบแบบสอบถาม</b></p></td>
+    </tr>
+
+    <tr>
+       <td>
+          <p><b>ชื่อ-นามสกุล</b><input type="text" name="ชื่อ-นามสกุล"></p>
+          <p><b>รหัสนักศึกษา</b><input type="text" name="รหัสนักศึกษา"></p>
+       </td>
+    </tr>
+
+    <tr>
+        <td>
+          <p><b>เพศ</b>   
+            <input type="radio" name="gender" value="ชาย" id="male"><label for="male">ชาย</label>
+            <input type="radio" name="gender" value="หญิง" id="female"><label for="female">หญิง</label>
+          </p>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+      <p><b>สังกัดคณะ</b>
+        <select name="สังกัดคณะ">
+          <option value="วิทยาศาสตร์">วิทยาศาสตร์</option>
+          <option value="">วิทยาการคอมพิวเตอร์</option>
+          <option value="ครุศาสตร์">ครุศาสตร์</option>
+          <option value="บริหารธุรกิจและการจัดการ">บริหารธุรกิจและการจัดการ</option>
+          <option value="มนุษย์ศาสตร์">มนุษย์ศาสตร์</option>
+          <option value="เทคโนโลยีอุตสาหกรรม">เทคโนโลยีอุตสาหกรรม</option>
+          <option value="เกษตรศาสตร์">เกษตรศาสตร์</option>
+          <option value="พยาบาลศาสตร์">พยาบาลศาสตร์</option>
+          <option value="สาธารณสุขศาสตร์">สาธารณสุขศาสตร์</option>
+          <option value="แพทย์แผนไทยและทางเลือก">แพทย์แผนไทยและทางเลือก</option>
+          <option value="นิติศาสตร์">นิติศาสตร์</option>
+        </select>
+      </p>
+        
+    </td>
+    </tr>
+
+    <tr>
+      <td>
+        <p><b>แม่สีที่ชื่นชอบ</b></p>
+        <input type="checkbox" name="b1" id="b1">
+        <label for="b1">สีแดง</label>
+        <input type="checkbox" name="b2" id="b2">
+        <label for="b2">สีเขียว</label>
+        <input type="checkbox" name="b3" id="b3">
+        <label for="b3">สีน้ำเงิน</label>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <p><b>ผลไม้ที่ชื่นชอบ</b></p>
+        <input type="checkbox" name="c1" id="c1">
+        <label for="c1">มะม่วง</label>
+        <input type="checkbox" name="c2" id="c2">
+        <label for="c2">น้อยหน่า</label>
+        <input type="checkbox" name="c3" id="c3">
+        <label for="c3">ทุเรียน</label><br>
+        <input type="checkbox" name="c4" id="c4">
+        <label for="c4">ลำไย</label>
+        <input type="checkbox" name="c5" id="c5">
+        <label for="c5">ฝรั่ง</label>
+        <input type="checkbox" name="c6" id="c6">
+        <label for="c6">แตงโม</label>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <p><b>อาหารที่ชื่นชอบ</b></p>
+        <input type="checkbox" name="d1" id="d1">
+        <label for="d1">ต้มยำกุ้ง</label>
+        <input type="checkbox" name="d2" id="d2">
+        <label for="d2">ไข่เจียวหมูสับ</label>
+        <input type="checkbox" name="d3" id="d3">
+        <label for="d3">แกงข่าไก่</label><br>
+        <input type="checkbox" name="d4" id="d4">
+        <label for="d4">แกงเขียวหวานไก่</label>
+        <input type="checkbox" name="d5" id="d5">
+        <label for="d5">ผัดไทย</label>
+        <input type="checkbox" name="d6" id="d6">
+        <label for="d6">ราดหน้าหมี่กรอบ</label>
+      </td>
+    </tr>
+
+    <tr class="submit">
+       <td><input type="submit" value="บันทึก" onclick="alert('บันทึกเรียบร้อยแล้ว')"></td> 
+    </tr>
+    </table>
     
-  
-  </body>
-  </html>
+    <!-- นาย ทัตเทพ ช่วยตา 66122420211 -->
+</body>
+</html>
